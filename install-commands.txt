@@ -1,5 +1,7 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-curl -sS https://starship.rs/install.sh | sh
+# local starship installation
+curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
 
+# nvim kickstart
 git clone git@github.com:johnwee1/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
